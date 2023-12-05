@@ -5,7 +5,7 @@
 cls
 clear all 
 
-use "C:\Users\ljaacks\OneDrive - University of Edinburgh\Anuvaad\Poshan Tracker\Poshan Tracker Analysis\Data\IAKR7AFL.DTA"
+use "UPDATE\IAKR7AFL.DTA"
  
 keep v002 v021 v022 v024 v025 hw2 hw7 hw8 hw10 hw11 hw71 hw72 sweight hw3 hw4 hw5 hw70 b4 hw1 b5 hw2 hw3 s558 s559 s563 b16 
 order v024 v025 sweight v021 v022 v002 b16 b5 b4 hw1 hw2 hw7 hw8 hw71 hw3 hw4 hw5 hw70 hw10 hw11 hw72 s558 s559 s563  
@@ -55,7 +55,7 @@ label var stunting "stunting (height for age)"
 label val stunting yesno
 
 estpost svy, subpop(sample): tab v024 stunting, row
-esttab using "C:\Users\ljaacks\OneDrive - University of Edinburgh\Anuvaad\Poshan Tracker\Poshan Tracker Analysis\Output\stunting.txt", cell("b(f(4))") unstack noobs replace wide plain 
+esttab using "UPDATE\stunting.txt", cell("b(f(4))") unstack noobs replace wide plain 
 
 *Underweight 
 gen underweight=0
@@ -65,7 +65,7 @@ label var underweight "underweight (weight for age)"
 label val underweight yesno
 	
 estpost svy, subpop(sample): tab v024 underweight, row
-esttab using "C:\Users\ljaacks\OneDrive - University of Edinburgh\Anuvaad\Poshan Tracker\Poshan Tracker Analysis\Output\underweight.txt", cell("b(f(4))") unstack noobs replace wide plain 
+esttab using "UPDATE\underweight.txt", cell("b(f(4))") unstack noobs replace wide plain 
 
 *Wasting
 gen wasting=0 
@@ -75,7 +75,7 @@ label val wasting yesno
 label var wasting "wasting (weight for height)"
 		
 estpost svy, subpop(sample): tab v024 wasting, row
-esttab using "C:\Users\ljaacks\OneDrive - University of Edinburgh\Anuvaad\Poshan Tracker\Poshan Tracker Analysis\Output\wasting.txt", cell("b(f(4))") unstack noobs replace wide plain 
+esttab using "UPDATE\wasting.txt", cell("b(f(4))") unstack noobs replace wide plain 
 
 *Overweight		
 gen overweight=0
@@ -85,4 +85,4 @@ label var overweight "overweight (weight for height)"
 label val overweight yesno
 	
 estpost svy, subpop(sample): tab v024 overweight, row
-esttab using "C:\Users\ljaacks\OneDrive - University of Edinburgh\Anuvaad\Poshan Tracker\Poshan Tracker Analysis\Output\overweight.txt", cell("b(f(4))") unstack noobs replace wide plain 
+esttab using "UPDATE\overweight.txt", cell("b(f(4))") unstack noobs replace wide plain 
