@@ -15,14 +15,14 @@ It derives survey-weighted estimates, taking into account the PSU and strata var
    
 This file merges estimates of stunting, underweight, wasting, and overweight from NFHS5 (above) with estimates from the Poshan Tracker at the all-India level and state level. It includes visualisations of the differences between the 2 data sources using lollipop charts.
    
-The file also visualises trends in the number of days Anganwadi centres (AWCs) are open, distribution of take-home rations (THR) and hot cooked meals (HCM), and child growth monitoring, from July 2022 to September 2023.
+The file also visualises trends in the number of days Anganwadi centres (AWCs) are open and the distribution of take-home rations (THR), from July 2022 to September 2023.
 
 
 There are 2 data files:
 
 **1. Excel data file called 'Poshan Tracker AWC 2023-12-02.xlxs'**
 
-This contains monthly monitoring data on the number of days Anganwadi centres (AWCs) are open, distribution of take-home rations (THR) and hot cooked meals (HCM), and child growth monitoring, from April 2022 to October 2023. Data are complete for July 2022 to September 2023.
+This contains monthly monitoring data on the number of days Anganwadi centres (AWCs) are open and the distribution of take-home rations (THR), from April 2022 to October 2023. Data are complete for July 2022 to September 2023.
    
 **2. Excel data file called 'Poshan Tracker Growth 2023-12-02.xlxs'**
 
